@@ -1,0 +1,28 @@
+[app/ui]
+version = 9.3.0
+modtime = 1729496688.199158000
+
+[app/launcher]
+version = 9.3.0
+modtime = 1729496688.200169000
+
+[indexes/my_weather_data_idx]
+owner = admin
+version = 9.3.0
+modtime = 1729500677.218036000
+
+[inputs/script%3A%2F%2F%24SPLUNK_HOME%2Fetc%2Fapps%2Fmy_weather_monitoring%2Fbin%2Fweather_data.py]
+owner = admin
+version = 9.3.0
+modtime = 1729500681.642497000
+
+[indexes/my_weather_tier3_idx]
+owner = admin
+version = 9.3.0
+modtime = 1729846001.183618000
+
+### Visualizations
+
+# Un-comment the stanza below to make the standin visualization available to all apps.
+[visualizations/weather_single_value]
+export = system

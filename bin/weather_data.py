@@ -8,7 +8,7 @@ apps_path=os.path.join(splunk_home,'etc','apps')
 app_name="my_weather_monitoring"
 app_path=os.path.join(apps_path,app_name)
 locations_csv_path=os.path.join(app_path,'lookups','locations.csv')
-api_key="c3b6c5fde7f6336b0b7dc9005fcceb8e"
+api_key="apikey" # your api key
 
 def get_weather_detials(city,latitute,longitude):
     response=requests.get(url=f"https://api.openweathermap.org/data/2.5/weather?lat={latitute}&lon={longitude}&appid={api_key}&units=metric")

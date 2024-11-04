@@ -2,13 +2,19 @@ import os,sys
 import csv
 import requests
 import json
+import configparser
+from security_1 import decrypt
 
 splunk_home=os.getenv("SPLUNK_HOME")
 apps_path=os.path.join(splunk_home,'etc','apps')
 app_name="my_weather_monitoring"
 app_path=os.path.join(apps_path,app_name)
 locations_csv_path=os.path.join(app_path,'lookups','locations.csv')
-api_key="apikey" # your api key
+configurations_path = os.path.join(app_path,'local','configurations.conf')
+cp=configparser.ConfigParser()
+cp.read(configurations_path)
+api_key_encrypted=cp['api_details']['api_token']
+api_key=decrypt(api_key_encrypted)
 
 def get_weather_detials(city,latitute,longitude):
     response=requests.get(url=f"https://api.openweathermap.org/data/2.5/weather?lat={latitute}&lon={longitude}&appid={api_key}&units=metric")

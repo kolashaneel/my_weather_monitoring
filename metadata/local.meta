@@ -26,3 +26,18 @@ modtime = 1729846001.183618000
 # Un-comment the stanza below to make the standin visualization available to all apps.
 [visualizations/weather_single_value]
 export = system
+
+[views/my_setup_dashboard]
+export = system
+owner = nobody
+version = 9.3.0
+modtime = 1730742653.684397000
+
+[nav/default]
+access = read : [ * ], write : [ admin, power ]
+export = system
+owner = nobody
+version = 9.3.0
+modtime = 1730709792.108109000
+
+

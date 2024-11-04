@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Inline&display=swap');
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Ensure body takes full height */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+.dashboard-title{
+    font-family: "Bungee Inline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    text-decoration: solid;
+    color: white;
+    font-size: xx-large;
+}
+
+
+.dashboard-body{
+    padding: 0;
+    margin: 0;
+    min-height: auto;
+}
+
+#row1{
+    width: fit-content;
+}
+
+.dashboard-row .dashboard-panel {
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-radius: 30px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    min-height: 0px;
+    background-color: #D9AFD9;
+    background-image: linear-gradient(186deg, #1a75ff 0%, #f92e1ce8 100%);
+}
+
+#layout1{
+    display: flex;
+    justify-content: center; /* Horizontally centers */
+    align-items: center; /* Vertically centers */
+    height: 100vh; /* Full viewport height */
+}
+
+#dashboard1{
+    background-image: url(images/setup_background.jpg);
+    background-size: cover; /* or 'contain' */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+    height: 100vh;
+}
+
+.header-controls{
+    display: none;
+}
+
+#submit_btn{
+    background-image: linear-gradient(to right, #1A2980 0%, #26D0CE 51%, #1A2980 100%);
+    padding: 5px 20px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    font-family: "Bungee Inline", sans-serif;
+    font-weight: 400;
+    font-style: normal
+}
+
+#submit_btn:hover {
+    
+    background-position: right center; /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+#myinput{
+    color: rgba(0, 0, 0, .87);
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.009375em;
+    text-decoration: inherit;
+    text-transform: inherit;
+    align-self: flex-end;
+    box-sizing: border-box;
+    transition: opacity 150ms cubic-bezier(0.4, 0, 0.2, 1);
+    border: none;
+    border-bottom: 5px solid;
+    border-radius: 15px;
+    background: rgb(245 217 217);
+    height: 44px;
+    width: 500px;
+    font-family: "Bungee Inline", sans-serif;
+    font-weight: 400;
+    font-style: normal
+}
+
+#myinput:hover{
+    border-bottom-color: rgba(0,0,0,.87);
+    background: #ececec;
+}
+
+#mylabel{
+    font-family: "Bungee Inline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+#notifier_success{
+    font-family: "Bungee Inline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #27ff27;
+}
+#notifier_fail{
+    font-family: "Bungee Inline", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color:#ffc640f5;
+}

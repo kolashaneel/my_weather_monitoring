@@ -40,4 +40,8 @@ owner = nobody
 version = 9.3.0
 modtime = 1730709792.108109000
 
+[searchbnf]
+export = system
 
+[commands/getapidetails]
+export = system
